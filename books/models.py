@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.timezone import now
 
 # Create your models here.
 
@@ -11,7 +12,16 @@ class Book(models.Model):
     is_favourite = models.BooleanField(default=False, verbose_name="Favourite?")
 
     def __str__(self):
-        return self.title
+        return "{} by {}".format(self.title, self.list_author())
+
+    def list_author(self):
+        return ", ".join([author.name for author in self.author.all()])
+
+    def save(self, *args, **kwargs):
+        if(self.review and self.date_reviewed is None):
+            self.date_reviewed = now()
+
+        super(Book, self).save(*args, **kwargs)
 
 
 class Author(models.Model):
