@@ -20,7 +20,7 @@ from django.conf.urls import include, url
 from django.conf import settings
 
 from books.views import (Authorlist, list_books, BookDetail, AuthorDetail,
-                        review_book, review_books)
+                        review_book, ReviewList)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,7 +28,7 @@ urlpatterns = [
     path('authors/', Authorlist.as_view(), name='authors'),
     path('books/<int:pk>/', BookDetail.as_view(), name='book-detail'),
     path('author/<int:pk>/', AuthorDetail.as_view(), name='author-detail'),
-    path('review/', review_books, name='review-books'),
+    path('review/', ReviewList.as_view(), name='review-books'),
     path('review/<int:pk>/', review_book, name='review-book'),
 ]
 

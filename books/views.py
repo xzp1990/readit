@@ -2,7 +2,7 @@ from django.db.models import Count
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import View, DetailView
 from .models import Author, Book
-from .forms import ReviewForm
+from .forms import BookForm, ReviewForm
 
 # Create your views here.
 #Functional view
@@ -44,18 +44,35 @@ class AuthorDetail(DetailView):
     model = Author
     template_name = "author.html"
 
-def review_books(request):
+class ReviewList(View):
     """
     List all the books that we want to review.
     :return:
     """
-    books = Book.objects.filter(date_reviewed__isnull=True).prefetch_related('author')
+    def get(self, request):
+        books = Book.objects.filter(date_reviewed__isnull=True).prefetch_related('author')
 
-    context = {
-        'books': books,
-    }
+        context = {
+            'books': books,
+            'form': BookForm,
+        }
 
-    return render(request, "list-to-review.html", context)
+        return render(request, "list-to-review.html", context)
+
+    def post(self, request):
+        form = BookForm(request.POST)
+        books = Book.objects.filter(date_reviewed__isnull=True).prefetch_related('author')
+
+        if form.is_valid():
+            form.save()
+            return redirect('review-books')
+
+        context = {
+            'form': form,
+            'books': books,
+        }
+
+        return render(request, "list-to-review.html", context)
 
 def review_book(request, pk):
     """
