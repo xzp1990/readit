@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfcedfd4-c891-4a38-8418-a508292366aa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/base.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/create-author.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readit/requirements/staging.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/list-to-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/list-to-review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readit/requirements/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readit/requirements/local.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readit/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirement.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,35 +84,26 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readit/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+            <state relative-caret-position="424">
+              <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirement.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirement.txt">
+      <file leaf-file-name="local.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readit/requirements/local.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="15" lean-forward="true" selection-end-line="4" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base.txt">
+      <file leaf-file-name="staging.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readit/requirements/staging.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="local.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/local.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -155,10 +142,11 @@
         <option value="$PROJECT_DIR$/books/templates/list-to-review.html" />
         <option value="$PROJECT_DIR$/books/forms.py" />
         <option value="$PROJECT_DIR$/books/models.py" />
-        <option value="$PROJECT_DIR$/readit/settings.py" />
         <option value="$PROJECT_DIR$/base.txt" />
         <option value="$PROJECT_DIR$/requirement.txt" />
         <option value="$PROJECT_DIR$/local.txt" />
+        <option value="$PROJECT_DIR$/staging.txt" />
+        <option value="$PROJECT_DIR$/readit/settings.py" />
       </list>
     </option>
   </component>
@@ -194,6 +182,12 @@
               <item name="readit" type="b2602c69:ProjectViewProjectNode" />
               <item name="readit" type="462c0819:PsiDirectoryNode" />
               <item name="readit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="readit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="readit" type="462c0819:PsiDirectoryNode" />
+              <item name="readit" type="462c0819:PsiDirectoryNode" />
+              <item name="requirements" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -370,10 +364,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readit/settings.py">
+    <entry file="file://$PROJECT_DIR$/readit/requirements/base.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -384,17 +378,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base.txt">
+    <entry file="file://$PROJECT_DIR$/readit/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="424">
+          <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local.txt">
+    <entry file="file://$PROJECT_DIR$/readit/requirements/local.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="15" lean-forward="true" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readit/requirements/staging.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
