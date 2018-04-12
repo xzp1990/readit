@@ -14,7 +14,7 @@
 				{% for book in books %}
 					<tr>
 						<td class="title">
-							{{ book.title }} by {{ book.list_authors }}
+							{{ book.title }} by {{ book.list_author }}
 						</td>
 						<td>
 							{% if book.reviewed_by == request.user %}
@@ -43,5 +43,5 @@
 		{{ form.as_p }}
 		<input type="submit" value="Add Book">
 	</form>
-	
+
 {% endblock %}
